@@ -1,5 +1,7 @@
 # DeepSeek API + Claude Code in VS Code
 
+English · [中文版](README.zh.md)
+
 Use the Claude Code VS Code extension with DeepSeek API — no Anthropic account needed.
 
 ![Shortest setup flow](images/image-1.png)
