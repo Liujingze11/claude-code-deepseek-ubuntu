@@ -6,15 +6,24 @@
 
 🌏 没有你的语言？欢迎提交 PR 添加。
 
-一个面向普通用户的跨平台部署包：快速安装 Claude Code，并把 Claude Code 请求转发到 DeepSeek API。
+使用 DeepSeek API 驱动 Claude Code 的完整指南 — 选择你的方式：
+
+| 方式 | 适合人群 | 指南 |
+|---|---|---|
+| 🖥 **终端 CLI** — npm 安装 + conda 环境 | 全新安装、服务器、无 IDE 依赖 | [↓ 快速开始](#快速开始) |
+| 🔌 **VS Code 插件** — 配置 `settings.json` | VS Code 用户、无需终端 | [vscode-guide/](vscode-guide/) |
+
+---
+
+## 🖥 终端 CLI 安装
+
+一个面向普通用户的跨平台部署包：自动安装 conda、Node.js 和 Claude Code，把请求转发到 DeepSeek API。
 
 支持：
 
 - macOS：双击安装，自动安装 Miniforge 隔离环境。
 - Windows：双击安装，自动准备 Git for Windows、Node.js LTS 和桌面快捷方式。
 - Linux/Ubuntu：命令行一键安装，适合服务器、开发机和 WSL。
-
-官方 Claude Code 安装要求可参考 [Anthropic Claude Code setup](https://docs.anthropic.com/zh-CN/docs/claude-code/setup)。本项目选择 npm 安装路线，并用脚本处理跨平台依赖和环境变量。
 
 ## 你需要准备什么
 
@@ -174,6 +183,11 @@ CLAUDE_CODE_EFFORT_LEVEL=max
 ```text
 .
 ├── README.md
+├── vscode-guide/          # VS Code 插件配置指南
+│   ├── README.md
+│   ├── README.zh.md
+│   ├── images/
+│   └── docs/              # 可下载的 PDF/DOCX/HTML
 ├── docs/
 │   ├── publish-checklist.md
 │   ├── troubleshooting.md

@@ -6,15 +6,24 @@ English · [中文版](README.zh.md)
 
 🌏 Don't see your language? Open a PR to add one — all welcome.
 
-A cross-platform one-click deployment pack for regular users: quickly install Claude Code and forward its requests to the DeepSeek API.
+All-in-one guide for using Claude Code with DeepSeek API — choose your setup:
+
+| Method | Best for | Guide |
+|---|---|---|
+| 🖥 **Terminal CLI** — npm install via conda env | Clean install, servers, no IDE dependency | [↓ Quick Start](#quick-start) |
+| 🔌 **VS Code Extension** — configure `settings.json` | VS Code users, no terminal needed | [vscode-guide/](vscode-guide/) |
+
+---
+
+## 🖥 Terminal CLI Setup
+
+A cross-platform one-click deployment pack: auto-installs conda, Node.js, and Claude Code, then forwards requests to DeepSeek API.
 
 Supported platforms:
 
 - **macOS**: double-click to install, auto-installs Miniforge isolated environment.
 - **Windows**: double-click to install, auto-prepares Git for Windows, Node.js LTS, and desktop shortcuts.
 - **Linux/Ubuntu**: one-line CLI install, suitable for servers, dev machines, and WSL.
-
-Official Claude Code setup docs: [Anthropic Claude Code setup](https://docs.anthropic.com/zh-CN/docs/claude-code/setup). This project uses the npm install route, with scripts handling cross-platform dependencies and environment variables.
 
 ## What You Need
 
@@ -174,6 +183,11 @@ To switch keys or models, edit the `.env` file in the corresponding platform dir
 ```text
 .
 ├── README.md
+├── vscode-guide/          # VS Code extension setup
+│   ├── README.md
+│   ├── README.zh.md
+│   ├── images/
+│   └── docs/              # downloadable PDF/DOCX/HTML
 ├── docs/
 │   ├── publish-checklist.md
 │   ├── troubleshooting.md
